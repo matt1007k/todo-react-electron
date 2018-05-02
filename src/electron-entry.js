@@ -1,6 +1,6 @@
 const electron = require('electron');
 const app = electron.app;
-const BrowserWindor = electron.BrowserWindow;
+const BrowserWindow = electron.BrowserWindow;
 
 let win;
 
@@ -8,7 +8,7 @@ let win;
 function createWindow(){
     win = new BrowserWindow({width: 800, height: 600});
 
-    win.loadUrl("http://localhost:3000");
+    win.loadURL("http://localhost:3000");
 
     win.webContents.openDevTools();
 
